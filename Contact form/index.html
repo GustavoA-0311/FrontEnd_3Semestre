@@ -4,9 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de contato</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    
+    <header class="form-header">
+        <div class="container container--flex">
+        <img src="./images/Vector3.svg" alt="Imagem de um usuario ilustrativo" 
+        class="form-header__image-perfil">
+        
+        <h1 class="form-header__title">Contact Form</h1>
+        <p class="form-header__text">Insira os dados do contato e clique em cadastrar!</p>
+        </div>
+    </header>
+
+<main>
+    <div class="container">
+        <form class="form-contact" action="">
+
+
+            <div class="form-contact__linha">
+            <div class="form-contact__col-a">
+                <label class="form-contact__label" for="nome">Nome</label>
+
+            </div>
+                        
+            <div class="form-contact__col-b">
+                 <input class="form-contact__input form-contact__input--metade" type="text" id="nome" name="nome">
+                <input class="form-contact__input form-contact__input--metade" type="text"id="sobrenome" name="sobrenome"s>
+            
+            </div>
+           
+
+            </div>
+            <div class="form-contact__linha">
+            <div class="form-contact__col-a">
+                <label class="form-contact__label" for="nome">Nome</label>
+
+            </div>
+                        
+            <div class="form-contact__col-b">
+                 <input class="form-contact__input form-contact__input--inteiro" type="text" id="nome" name="nome">
+            
+            </div>
+           
+
+            </div>
+        </form>
+    </div>
+    </main>
+
+
+    <footer>
+        Todos os direitos reservados
+    </footer>
 </body>
 </html>

@@ -1,3 +1,9 @@
+@font-face{
+    font-family: Architects;
+    src: url(../css/fonts/Architects_Daughter/ArchitectsDaughter-Regular.ttf);
+
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -5,5 +11,124 @@
 }
 
 body {
-    background-color: blueviolet;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgb(0, 119, 255), rgb(0, 128, 102));
+    background-repeat: no-repeat;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid white; */
+}
+
+.container--flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.form-header__image-perfil{
+    width: 100px;
+    padding: 20px;
+
+    box-shadow: 0 0 7px rgba(222, 210, 124, 0.2);
+}
+
+
+.form-header__title{
+    color: #DED27C;
+    font-family: Architects, sans-serif;
+
+
+}
+
+
+.form-header__text{
+        font-family:'Courier New', Courier, monospace
+
+}
+
+
+.form-contact{
+    padding: 20px;
+}
+
+
+
+.form-contact__linha{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+    /* height: 60px; */
+    /* border: 1px solid yellowgreen; */
+}
+
+
+.form-contact__col-a{
+    width: 10%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+
+.form-contact__col-b{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+
+.form-contact__label{
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form-contact__input{
+            width: 100%;
+    padding: 5px 10px;
+    height: 35px;
+    background-color: #18a2c9;
+    border: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    outline: none;
+    border-radius: 3px;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+
+.form-contact__input::placeholder{
+    color: #18a2c9;
+}
+
+.form-contact__input:focus{
+    background-color: #18a2c9;
+    color :white;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.form-contact__input--metade{
+    width: 48%;
+    
+}
+
+
+
+.form-contact__input-inteiro{
+
+     display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
 }
