@@ -1,0 +1,57 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "contatos": [
+    {
+      "id": "1",
+      "nome": "Gustavo",
+      "sobrenome": "Augusto"
+    },
+    {
+      "id": "2",
+      "nome": "daniel",
+      "sobrenome": "alves"
+    },
+    {
+      "id": "3",
+      "nome": "davi",
+      "sobrenome": "muniz"
+    },
+    {
+      "id": "4",
+      "nome": "paulo",
+      "sobrenome": "andre"
+    },
+    {
+      "nome": "leticia",
+      "sobrenome": "ferreira",
+      "id": "-DUn0oOeYnc"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
