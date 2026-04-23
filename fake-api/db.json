@@ -1,0 +1,43 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "Gustavo Augusto",
+      "idade": 17,
+      "email": "g.a@gmail.com"
+    },
+    {
+      "id": "2",
+      "nome": "Leticia Ferreira",
+      "idade": 14,
+      "email": "leth@gmail.com"
+    },
+    {
+      "id": "3",
+      "nome": "Gabriel Figueira",
+      "idade": 17,
+      "email": "biel@gmail.com"
+    },
+    {
+      "name": "Add your name in the body",
+      "id": "dmhcV_t5HR0"
+    }
+  ],
+  "post": [
+    {
+      "texto": "marcos",
+      "Imagem": "https://blog.nautikalazer.com.br/wp-content/uploads/2021/12/5-DICAS-QUE-TODO-PESCADOR-DEVE-SABER.jpg",
+      "qtdCurtidas": "500",
+      "id": "vm7ZM7q9PwY"
+    },
+    {
+      "texto": "Tomate",
+      "Imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzT3qiYa01teBkq5L1BluqFj7UeGz2FCEQew&s",
+      "qtdCurtidas": "500",
+      "id": "0ysFGmEpQq8"
+    }
+  ],
+  "frutas": [],
+  "jogos": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}
