@@ -65,5 +65,56 @@
       "id": "HkMwlY-YXhE"
     }
   ],
+  "calculadora": [
+    {
+      "n1": 3,
+      "n2": 3,
+      "op": "multiplicacao",
+      "resultado": "9.00",
+      "id": "SX2J7cg6oag"
+    },
+    {
+      "n1": 3,
+      "n2": 3,
+      "op": "soma",
+      "resultado": "6.00",
+      "id": "jmpdGfyZnqk"
+    },
+    {
+      "n1": 3,
+      "n2": 3,
+      "op": "subtracao",
+      "resultado": "0.00",
+      "id": "OXX0HEJH8Iw"
+    },
+    {
+      "n1": 3,
+      "n2": 3,
+      "op": "divisao",
+      "resultado": "1.00",
+      "id": "a7rGhgW1PSU"
+    },
+    {
+      "n1": 70,
+      "n2": 3,
+      "op": "subtracao",
+      "resultado": "67.00",
+      "id": "pavBcUAdo5o"
+    },
+    {
+      "n1": 33.5,
+      "n2": 2,
+      "op": "multiplicacao",
+      "resultado": "67.00",
+      "id": "bhZGJPoDdQ4"
+    },
+    {
+      "n1": 33,
+      "n2": 34,
+      "op": "soma",
+      "resultado": "67.00",
+      "id": "K4cHfOnqlmQ"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }

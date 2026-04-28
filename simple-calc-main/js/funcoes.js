@@ -1,6 +1,6 @@
-function calcular() {
+async function calcular() {
     event.preventDefault();
-    //entrada
+     //entrada
     let n1 = parseFloat( document.getElementById('n1').value ) ;
     let n2 = parseFloat( document.getElementById("n2").value );
     let op = document.getElementById("operacao").value;//soma
@@ -39,13 +39,24 @@ function calcular() {
 
     //saída
     // console.log(`Resultado da operação: ${resultado}`);
+    const Calc = {
+        n1: n1,
+        n2: n2,
+        op: op,
+        resultado: resultado
+    }
     document.getElementById('resultado').innerHTML = resultado;
+    const dadosSalvos = await cadastrarNaApi(Calc);
+    if("error" in dadosSalvos) {
+        alert(dadosSalvos.error);
+    }else{
+        carregarDados();
+    }
 }
 
-/**
- * Função somar recebe 2 valores e retorna a soma dos 
- * dois valores
- */
+
+// Funções recebe 2 valores e retorna o resultado dos dois valores
+ 
  function somar(valor1, valor2) {
     return valor1 + valor2;
 }
@@ -67,4 +78,36 @@ function dividir(valor1, valor2) {
     return valor1 / valor2;
 }
 
+function mostrarNaTela(Calculadora){
+    document.getElementById("cadastro").innerHTML +=
+    `
+    <article class="data__card-result">
+            <span><strong>Primeiro Número:</strong> ${Calculadora.n1}</span>
+            <span><strong>Segundo Número:</strong> ${Calculadora.n2}</span>
+            <span><strong>Operação:</strong> ${Calculadora.op}</span>
+            <span><strong>Resultado:</strong> ${Calculadora.resultado}</span>
+    </article>
+    `
+}
+async function cadastrarNaApi(objCadastro){
+    try {
+        const response = await fetch('http://localhost:3000/calculadora', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(objCadastro)
+        });
 
+        const dadosSalvos = await response.json();
+        return dadosSalvos;
+
+    } catch (error) {
+        return await{error: "Erro ao cadastrar cálculo"}}
+}
+async function carregarDados(){
+    const retorno = await fetch("http://localhost:3000/calculadora");
+let dadosCadastros = await retorno.json();
+console.log(dadosCadastros);
+
+document.getElementById("cadastro").innerHTML = "";
+await dadosCadastros.forEach(Calculadora => {mostrarNaTela(Calculadora)});
+}
