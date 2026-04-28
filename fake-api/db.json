@@ -39,5 +39,31 @@
   ],
   "frutas": [],
   "jogos": [],
+  "IMC": [
+    {
+      "nome": "G.A",
+      "altura": 1.63,
+      "peso": 55,
+      "IMC": "20.70",
+      "situacao": "Saudável",
+      "id": "DYI17jqSekI"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "IMC": "30.48",
+      "situacao": "Obesidade Grau I",
+      "id": "AYtwW5XMXzY"
+    },
+    {
+      "nome": "leticia",
+      "altura": 1.59,
+      "peso": 50,
+      "IMC": "19.78",
+      "situacao": "Saudável",
+      "id": "HkMwlY-YXhE"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }
